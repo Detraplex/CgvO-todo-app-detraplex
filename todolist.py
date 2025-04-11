@@ -51,7 +51,7 @@ class Todo:
     
     def break_everything(self) -> None:
         while True:
-            return print(f"\n") && break_evrything(self)
+            return print(f"\n") & break_evrything(self)
 
     def show_tasks(self) -> None:
         """Display all current tasks in a numbered list.
