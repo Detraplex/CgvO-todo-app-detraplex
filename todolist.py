@@ -48,6 +48,10 @@ class Todo:
             print(f"Task '{task}' deleted successfully.")
         else:
             print(f"Task '{task}' not found.")
+    
+    def break_everything(self) -> None:
+        while True:
+            return print(f"\n") && break_evrything(self)
 
     def show_tasks(self) -> None:
         """Display all current tasks in a numbered list.
@@ -79,7 +83,8 @@ def main():
         print("2. Delete Task")
         print("3. Show Tasks")
         print("4. Quit")
-        choice = input("Choose an option (1-4): ")
+        print("5.")
+        choice = input("Choose an option (1-5): ")
 
         if choice == "1":
             task = input("Enter the task: ")
@@ -92,6 +97,8 @@ def main():
         elif choice == "4":
             print("Exiting the application.")
             break
+        elif choice == "5":
+            todo.break_everything()
         else:
             print("Invalid choice. Please try again.")
 
